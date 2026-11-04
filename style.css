@@ -1,0 +1,6 @@
+:root{color-scheme:light dark;--bg:#fff;--fg:#1c1c1e;--muted:#6e6e73;--accent:#0a84ff;--line:#e5e5ea}
+@media(prefers-color-scheme:dark){:root{--bg:#000;--fg:#f2f2f7;--muted:#98989d;--line:#2c2c2e}}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}h1{font-size:34px;line-height:1.15;margin:0 0 8px}h2{font-size:22px;margin:36px 0 10px}
+p.lead,p.muted{color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;vertical-align:top;padding:8px 10px 8px 0;border-bottom:1px solid var(--line)}
+a{color:var(--accent)}nav a{margin-right:16px}footer{margin-top:60px;color:var(--muted);font-size:14px}
