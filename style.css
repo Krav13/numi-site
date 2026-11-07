@@ -233,3 +233,4 @@ details p{margin:0 0 20px;color:var(--text-2)}
 h1{font-size:clamp(40px,5.2vw,64px)}
 @media (min-width:1200px){.gallery{justify-content:flex-start}.gallery figure:first-child{margin-left:auto}.gallery figure:last-child{margin-right:auto}}
 @media (min-width:1200px){.gallery{gap:20px}.gallery figure{width:176px}.gallery .phone{width:176px}.gallery figcaption{font-size:14px}}
+@media (max-width:420px){h1{font-size:38px}}
