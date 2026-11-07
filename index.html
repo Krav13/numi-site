@@ -3,22 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Numi — учёт финансов для счетов в разных странах</title>
-<meta name="description" content="Рубли, лари, доллары и евро из разных банков в одной сумме. Подключение банка, импорт выписок, лимиты и цели. Без регистрации, данные хранятся на iPhone.">
+<title>Numi — учёт финансов: рубли, лари, доллары и евро в одном балансе</title>
+<meta name="description" content="Numi — учёт финансов для iPhone. Рубли, лари, доллары и евро из разных банков в одном балансе. Выписки, QR чеков и скриншоты вместо ручного ввода, лимиты, цели, кредиты. Без регистрации, данные остаются на телефоне.">
 <!-- После подключения numi.space заменить krav13.github.io/numi-site/ на numi.space/ здесь, в og:*, robots.txt и sitemap.xml -->
 <link rel="canonical" href="https://krav13.github.io/numi-site/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Numi">
-<meta property="og:title" content="Numi — рубли, лари и доллары в одном балансе">
-<meta property="og:description" content="Учёт финансов для счетов в нескольких странах. Без регистрации, данные хранятся на iPhone.">
+<meta property="og:title" content="Numi — учёт финансов. Рубли, лари, доллары и евро в одном балансе">
+<meta property="og:description" content="Все счета в одном балансе: Т-Банк, Сбер, TBC и наличные. Выписки, QR чеков и скриншоты вместо ручного ввода. Данные остаются на телефоне.">
 <meta property="og:url" content="https://krav13.github.io/numi-site/">
 <meta property="og:image" content="https://krav13.github.io/numi-site/img/og.png">
+<meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Numi — учёт финансов. Рубли, лари, доллары и евро в одном балансе">
+<meta name="twitter:description" content="Все счета в одном балансе: Т-Банк, Сбер, TBC и наличные. Выписки, QR чеков и скриншоты вместо ручного ввода. Данные остаются на телефоне.">
+<meta name="twitter:image" content="https://krav13.github.io/numi-site/img/og.png">
 <meta name="theme-color" content="#F6F5F2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <!-- После выхода в App Store раскомментировать: Safari покажет плашку «Открыть в App Store» -->
 <!-- <meta name="apple-itunes-app" content="app-id=6826416374"> -->
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" sizes="1024x1024" href="icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -39,13 +44,15 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <h1>Рубли, лари и доллары — <span class="blue">в&nbsp;одном балансе</span></h1>
-      <p class="lead">Numi собирает счета из банков России и Грузии в одну сумму и считает, сколько можно тратить в день до зарплаты. Без регистрации, все данные хранятся на iPhone.</p>
+      <p class="kicker">Numi — учёт финансов</p>
+      <h1>Рубли, лари, доллары и&nbsp;евро — <span class="blue">в&nbsp;одном балансе</span></h1>
+      <p class="lead">Numi собирает счета из банков России и Грузии, наличные и кредиты в одну сумму и считает, сколько можно тратить в день до зарплаты. Без регистрации, все данные хранятся на iPhone.</p>
       <div class="cta">
-        <!-- APP_STORE: после релиза поставить первой кнопку <a class="btn" href="https://apps.apple.com/app/id6826416374">Загрузить в App Store</a>, «Что умеет Numi» сделать btn-2, а строку «Скоро в App Store» убрать -->
-        <a class="btn" href="#features">Что умеет Numi</a>
+        <!-- APP_STORE: ссылка-заглушка. Версия 1.0 (сборка 75) на проверке в App Store с 2026-11-04; страница apps.apple.com/app/id6826416374 заработает после публикации. Тогда же убрать строку .review ниже и раскомментировать apple-itunes-app в <head>. -->
+        <a class="btn" href="https://apps.apple.com/app/id6826416374"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.88 1.15 9.13.76 1.1 1.67 2.34 2.86 2.29 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.77-2.22.87-1.28 1.23-2.51 1.25-2.58-.03-.01-2.4-.92-2.41-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>Скачать в App Store</a>
+        <a class="btn btn-2" href="#features">Что умеет Numi</a>
       </div>
-      <p class="soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.88 1.15 9.13.76 1.1 1.67 2.34 2.86 2.29 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.77-2.22.87-1.28 1.23-2.51 1.25-2.58-.03-.01-2.4-.92-2.41-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg><span><b>Скоро в App Store</b>Бесплатно, для iPhone</span></p>
+      <p class="review">Бесплатно, для iPhone. Приложение проходит проверку в App Store — ссылка заработает после публикации.</p>
     </div>
     <div class="hero-visual" aria-hidden="true">
       <div class="phone p1"><img src="img/01_overview.webp" alt="" width="1320" height="2868" fetchpriority="high"></div>
@@ -82,11 +89,12 @@
         <h2>Расходы попадают в&nbsp;Numi сами</h2>
         <p>Подключите банк — операции и балансы будут обновляться в фоне. Вход идёт на сайте банка, пароль Numi не сохраняет. Для остальных банков загрузите выписку, а покупку за наличные добавьте по QR-коду чека.</p>
         <ul class="pills">
-          <li><svg viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg>Т-Банк и Сбер, тест</li>
+          <li><svg viewBox="0 0 24 24"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></svg>Т-Банк и Сбер</li>
           <li><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>CSV, Excel, OFX, 1С</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/></svg>QR-код чека</li>
           <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 8"/></svg>Скриншот из банка</li>
         </ul>
+        <p class="notice"><b>Тестовый режим.</b> Автоматическая загрузка операций из банков пока работает в тестовом режиме: вы входите на сайт банка внутри приложения, пароль не сохраняется. Если банк не ответил, выписку всегда можно загрузить файлом.</p>
       </div>
       <div class="shot">
         <div class="phone"><img src="img/02_operations.webp" alt="Экран «Операции»: покупки по дням с банком и категорией" width="1320" height="2868" loading="lazy"></div>
@@ -97,7 +105,7 @@
       <div class="text">
         <span class="kicker">Планы</span>
         <h2>Сколько можно тратить сегодня</h2>
-        <p>Numi делит остаток до зарплаты на дни с учётом регулярных платежей. Лимиты по категориям предупредят о перерасходе, цели покажут, сколько откладывать в месяц.</p>
+        <p>Numi делит остаток до зарплаты на дни с учётом регулярных платежей и кредитов. Лимиты по категориям предупредят при 80 и 100 %, цели покажут, сколько откладывать в месяц, а по кредитам и ипотеке виден график погашения.</p>
         <div class="daily"><b class="num">17 349 ₽ в день</b><span>до зарплаты 7 дней</span></div>
       </div>
       <div class="shot">
@@ -105,6 +113,23 @@
       </div>
     </div>
 
+    <div class="more">
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></svg>
+        <h3>Кредиты и ипотека</h3>
+        <p>Кредит — такой же счёт, только с минусом. Остаток долга входит в общий баланс, ежемесячный платёж учитывается в «можно тратить в день», график погашения показывает, когда закроете.</p>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.5"/></svg>
+        <h3>Советы Claude — по желанию</h3>
+        <p>Добавьте свой ключ API Anthropic, и Claude разберёт, где можно сэкономить. Уходят только итоги по категориям за этот и прошлый месяц и лимиты: без магазинов, счетов и заметок. Без ключа функция просто выключена.</p>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        <h3>Копия и экспорт</h3>
+        <p>Зашифрованная резервная копия переносит всё на новый iPhone, экспорт в CSV открывается в Numbers или Excel. Нажатие на общий баланс переключает валюту итога на лету.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -140,15 +165,15 @@
 <section class="gallery-sec">
   <div class="center-head">
     <h2>Все экраны</h2>
-    <p>Светлая и тёмная тема, как в системе</p>
+    <p>Шесть экранов из App Store. Листайте в сторону</p>
   </div>
   <div class="gallery">
-    <figure><div class="phone"><img src="img/01_overview.webp" alt="Экран «Обзор»: общий баланс, расходы за месяц, динамика" width="1320" height="2868" loading="lazy"></div><figcaption>Обзор</figcaption></figure>
-    <figure><div class="phone"><img src="img/02_operations.webp" alt="Экран «Операции» с фильтрами по банкам" width="1320" height="2868" loading="lazy"></div><figcaption>Операции</figcaption></figure>
-    <figure><div class="phone"><img src="img/03_plans.webp" alt="Экран «Планы»: лимиты, цели, регулярные платежи" width="1320" height="2868" loading="lazy"></div><figcaption>Планы</figcaption></figure>
-    <figure><div class="phone"><img src="img/04_accounts.webp" alt="Экран «Счета»: счета в России и Грузии, кредиты" width="1320" height="2868" loading="lazy"></div><figcaption>Счета</figcaption></figure>
-    <figure><div class="phone"><img src="img/05_add.webp" alt="Добавление расхода с выбором категории" width="1320" height="2868" loading="lazy"></div><figcaption>Новая операция</figcaption></figure>
-    <figure><div class="phone"><img src="img/06_overview_dark.webp" alt="Экран «Обзор» в тёмной теме" width="1320" height="2868" loading="lazy"></div><figcaption>Тёмная тема</figcaption></figure>
+    <figure><div class="phone"><img src="img/01_overview.webp" alt="Экран «Обзор»: общий баланс, расходы за месяц, динамика" width="1320" height="2868" loading="lazy"></div><figcaption><b>Обзор</b>Все деньги на одном экране</figcaption></figure>
+    <figure><div class="phone"><img src="img/02_operations.webp" alt="Экран «Операции» с фильтрами по банкам" width="1320" height="2868" loading="lazy"></div><figcaption><b>Операции</b>Каждая трата — по полочкам</figcaption></figure>
+    <figure><div class="phone"><img src="img/03_plans.webp" alt="Экран «Планы»: лимиты, цели, регулярные платежи" width="1320" height="2868" loading="lazy"></div><figcaption><b>Планы</b>Лимиты, цели, регулярные платежи</figcaption></figure>
+    <figure><div class="phone"><img src="img/04_accounts.webp" alt="Экран «Счета»: счета в России и Грузии, кредиты" width="1320" height="2868" loading="lazy"></div><figcaption><b>Счета</b>Россия и Грузия в одном балансе</figcaption></figure>
+    <figure><div class="phone"><img src="img/05_add.webp" alt="Добавление расхода с выбором категории" width="1320" height="2868" loading="lazy"></div><figcaption><b>Новая операция</b>Добавить трату за пару секунд</figcaption></figure>
+    <figure><div class="phone"><img src="img/06_overview_dark.webp" alt="Экран «Обзор» в тёмной теме" width="1320" height="2868" loading="lazy"></div><figcaption><b>Тёмная тема</b>Светлая и тёмная тема, как в системе</figcaption></figure>
   </div>
 </section>
 
@@ -167,10 +192,12 @@
 
 <section class="final">
   <img src="img/icon.webp" alt="" width="112" height="112" loading="lazy">
-  <h2>Numi скоро в App Store</h2>
-  <p>Бесплатное приложение для iPhone. Пока ждём релиза, вопросы и предложения можно оставить на странице поддержки.</p>
+  <h2>Numi для iPhone</h2>
+  <p>Бесплатно, без регистрации и встроенных покупок. Приложение проходит проверку в App Store — ссылка заработает после публикации, а вопросы и предложения уже можно оставить на странице поддержки.</p>
   <div class="cta">
-    <a class="btn" href="support.html">Написать нам</a>
+    <!-- APP_STORE: та же ссылка-заглушка, что и в первом экране -->
+    <a class="btn" href="https://apps.apple.com/app/id6826416374"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.47.83-.72 0-1.82-.81-2.99-.79-1.54.02-2.96.9-3.75 2.27-1.6 2.78-.41 6.88 1.15 9.13.76 1.1 1.67 2.34 2.86 2.29 1.15-.05 1.58-.74 2.97-.74 1.38 0 1.77.74 2.98.72 1.23-.02 2.01-1.12 2.77-2.22.87-1.28 1.23-2.51 1.25-2.58-.03-.01-2.4-.92-2.41-3.65zM14.1 5.86c.63-.77 1.06-1.83.94-2.89-.91.04-2.02.61-2.67 1.37-.58.67-1.1 1.76-.96 2.8 1.02.08 2.06-.52 2.69-1.28z"/></svg>Скачать в App Store</a>
+    <a class="btn btn-2" href="support.html">Написать нам</a>
   </div>
 </section>
 </main>

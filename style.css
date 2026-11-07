@@ -216,3 +216,20 @@ details p{margin:0 0 20px;color:var(--text-2)}
 @media (max-width:420px){.hero-visual .p1{left:calc(50% - 176px)}.hero-visual .p2{left:calc(50% - 16px)}}
 @media (max-width:900px){.hero-visual{height:520px}.hero-visual .phone{width:240px}.hero-visual .p2{width:225px}}
 @media (max-width:420px){.hero-visual{height:440px}.hero-visual .phone{width:200px}.hero-visual .p2{width:190px}}
+
+/* Доработки: кнопка App Store, плашка тестового режима, карточки, подписи галереи */
+.hero .kicker{display:block;margin:0 0 16px;color:var(--accent);font-weight:600;font-size:15px;letter-spacing:.01em}
+.review{margin:20px 0 0;color:var(--text-2);font-size:15px;line-height:1.4;max-width:30rem}
+.notice{margin:24px 0 0;padding:14px 16px;border-radius:12px;background:var(--accent-soft);color:var(--text-2);font-size:15px;line-height:1.45}
+.notice b{color:var(--text);font-weight:600}
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:64px}
+.more div{background:var(--surface);border-radius:20px;padding:28px 24px;box-shadow:var(--shadow)}
+.more svg{width:28px;height:28px;fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin-bottom:20px}
+.more h3{font-size:18px;margin:0 0 8px;font-weight:600;letter-spacing:-.01em}
+.more p{margin:0;color:var(--text-2);font-size:15px}
+.gallery figcaption b{display:block;color:var(--text);font-weight:600;margin-bottom:2px}
+@media (max-width:1000px){.more{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.more{grid-template-columns:1fr;margin-top:48px}.more div{padding:24px 20px}.hero .cta .btn{width:100%;justify-content:center}}
+h1{font-size:clamp(40px,5.2vw,64px)}
+@media (min-width:1200px){.gallery{justify-content:flex-start}.gallery figure:first-child{margin-left:auto}.gallery figure:last-child{margin-right:auto}}
+@media (min-width:1200px){.gallery{gap:20px}.gallery figure{width:176px}.gallery .phone{width:176px}.gallery figcaption{font-size:14px}}
